@@ -14,7 +14,7 @@ public class LinkServlet extends HttpServlet {
         throws ServletException, IOException {
     		String userName = request.getParameter("name");
     		String message = "Servletからデータを受信しました：" + userName + "、こんにちは！";
-    		request.setAttribute("Message", message);
+    		request.setAttribute("message", message);
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
     }

@@ -17,17 +17,11 @@ public class ConfirmServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
 
-        // JSPからのリクエストデータ取得
-        String name = request.getParameter("user_name");
-        String email = request.getParameter("user_email");
-        String abbres = request.getParameter("user_addres");
-        String number = request.getParameter("user_number");
-
         // リクエストスコープにデータ保存
-        request.setAttribute( "name", name );
-        request.setAttribute( "email", email );
-        request.setAttribute( "abbres", abbres );
-        request.setAttribute( "number", number );
+        request.setAttribute( "name", request.getParameter("name") );
+        request.setAttribute( "email", request.getParameter("email") );
+        request.setAttribute( "address", request.getParameter("address") );
+        request.setAttribute( "phone_number", request.getParameter("phone_number") );
 
         // フォワードによる画面遷移
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/pages/confirmPage.jsp");

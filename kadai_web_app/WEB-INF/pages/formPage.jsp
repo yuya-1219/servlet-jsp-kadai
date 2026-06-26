@@ -11,25 +11,25 @@
 	            <tr>
 	                <td>氏名</td>
 	                <td>
-	                    <input type="text" name="user_name">
+	                    <input type="text" name="name">
 	                </td>
 	            </tr>
 	            <tr>
 	                <td>メールアドレス</td>
 	                <td>
-	                    <input type="text" name="user_email">
+	                    <input type="text" name="email">
 	                </td>
 	            </tr>
 	            <tr>
 	                <td>住所</td>
 	                <td>
-	                    <input type="text" name="user_addres">
+	                    <input type="text" name="address">
 	                </td>
 	            </tr>
 	            <tr>
 	                <td>電話番号</td>
 	                <td>
-	                    <input type="text" name="user_number">
+	                    <input type="text" name="phone_number">
 	                </td>
 	            </tr>
 	        </table>
